@@ -22,11 +22,11 @@ def generate_quiz():
     return [x, y, op, display]
 
 def check_answer(x, y, op, result, user_choice):
-    if op == '+' :
-        if x + y == result:
-            if user_choice == True:
-                return True
-            else:
+    if op == '+' :  # dinh dang phep tinh
+        if x + y == result: # danh gia bieu thuc dieu kien
+            if user_choice == True: # neu nguoi dung chon dung
+                return True # tra ve gt dung
+            else:   # x + y != result
                 return False
         else:
             if user_choice == True:

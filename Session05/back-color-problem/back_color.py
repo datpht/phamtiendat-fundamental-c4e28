@@ -45,21 +45,29 @@ def generate_quiz():
             ]
 
 def mouse_press(x, y, text, color, quiz_type):
-    if x in range(20,121) and y in range(60,161):
-        mouse_pressing = 'blue'
-    elif x in range(140,241) and y in range(60,161):
-        mouse_pressing = 'red'
-    elif x in range(20,121) and y in range(180,281):
-        mouse_pressing = 'yellow'
-    elif x in range(140,241) and y in range(180,281):
-        mouse_pressing = 'green'
-          
     if quiz_type == 0:
+        if x in range(20,121) and y in range(60,161):
+            mouse_pressing = 'blue'
+        elif x in range(140,241) and y in range(60,161):
+            mouse_pressing = 'red'
+        elif x in range(20,121) and y in range(180,281):
+            mouse_pressing = 'yellow'
+        elif x in range(140,241) and y in range(180,281):
+            mouse_pressing = 'green'
         if mouse_pressing == text:
             return True
         else:
             return False
     if quiz_type == 1:
+        if x in range(20,121) and y in range(60,161):
+            mouse_pressing = '#3F51B5'
+        elif x in range(140,241) and y in range(60,161):
+            mouse_pressing = '#C62828'
+        elif x in range(20,121) and y in range(180,281):
+            mouse_pressing = '#FFD600'
+        elif x in range(140,241) and y in range(180,281):
+            mouse_pressing = '#4CAF50'  
+
         if mouse_pressing == color :
             return True
         else:
